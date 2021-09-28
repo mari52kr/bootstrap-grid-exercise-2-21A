@@ -5,57 +5,135 @@
 /**************************************************/
 
 #hero {
-  background-color: azure;
+  background-color: red;
 }
 
 #voresis {
-  background-color: lightyellow;
+  background-color: red;
 }
 
 #tilbud {
-  background-color: burlywood;
+  background-color: red;
 }
 
 #omos {
-  background-color: lavender;
+  background-color: red;
+}
+
+.herotext {
+  bottom: 50%;
 }
 
 /**************************************************/
 /* Small devices (landscape phones, 576px and up) */
 /**************************************************/
-@media (min-width: 576px) {}
+
+@media (min-width: 576px) {
+  body {
+    background-color: red;
+  }
+
+  #hero {
+    background-color: red;
+  }
+
+  #voresis {
+    background-color: red;
+  }
+
+  #tilbud {
+    background-color: red;
+  }
+
+  #omos {
+    background-color: red;
+  }
+}
 
 /* END "sm-" 576px and up */
-
 
 /**************************************************/
 /* // Medium devices (tablets, 768px and up) */
 /**************************************************/
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  body {
+    background-color: yellow;
+  }
+
+  #hero {
+    background-color: yellow;
+  }
+
+  #voresis {
+    background-color: yellow;
+  }
+
+  #tilbud {
+    background-color: yellow;
+  }
+
+  #omos {
+    background-color: yellow;
+  }
+}
 
 /* END "md-" 768px and up */
-
 
 /**************************************************/
 /* // Large devices (desktops, 992px and up) */
 /**************************************************/
 @media (min-width: 992px) {
-
   /* END "lg-" 992px and up */
+  body {
+    background-color: peru;
+  }
+
+  #hero {
+    background-color: peru;
+  }
+
+  #voresis {
+    background-color: peru;
+  }
+
+  #tilbud {
+    background-color: peru;
+  }
+
+  #omos {
+    background-color: peru;
+  }
 }
 
 /**************************************************/
 /* // Extra large devices (large desktops, 1200px and up) */
 /**************************************************/
 @media (min-width: 1200px) {
-
   /* END "xl-" 1200px and up */
+  body {
+    background-color: blue;
+  }
+
+  #hero {
+    background-color: blue;
+  }
+
+  #voresis {
+    background-color: blue;
+  }
+
+  #tilbud {
+    background-color: blue;
+  }
+
+  #omos {
+    background-color: blue;
+  }
 }
 
 /**************************************************/
 /* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
 /**************************************************/
 @media (min-width: 1400px) {
-
   /* END "xxl-" 1400px and up */
 }

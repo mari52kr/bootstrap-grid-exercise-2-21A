@@ -1,105 +1,100 @@
- /* // Extra small devices (portrait phones, less than 576px)
+/* // Extra small devices (portrait phones, less than 576px)
     // No media query for `xs` since this is the default in Bootstrap*/
 
- /**************************************************/
- /* WRITE MOBILE STYLES AND GENERAL STYLES (fonts, colors etc.) HERE BEFORE THE FIRST BREAKPOINT */
- /**************************************************/
- body {
-   background-color: red;
- }
+/**************************************************/
+/* WRITE MOBILE STYLES AND GENERAL STYLES (fonts, colors etc.) HERE BEFORE THE FIRST BREAKPOINT */
+/**************************************************/
+body {
+  background-color: red;
+}
 
- /* tidl. kaldet 'xs-' */
- body::before {
-   content: "Default. mobile/under 576px. Deafult i Bootstrap.";
-   padding: 1rem;
-   background-color: turquoise;
-   position: fixed;
-   top: 0;
-   left: 0;
-   z-index: 1000;
-   opacity: 0.5;
- }
+/* tidl. kaldet 'xs-' */
+body::before {
+  content: "Default. mobile/under 576px. Deafult i Bootstrap.";
+  padding: 1rem;
+  background-color: turquoise;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0.5;
+}
 
- /*  section {
+/*  section {
    margin-bottom: 30px;
  } */
 
- /**************************************************/
- /* Small devices (landscape phones, 576px and up) */
- /**************************************************/
- @media (min-width: 576px) {
+/**************************************************/
+/* Small devices (landscape phones, 576px and up) */
+/**************************************************/
+@media (min-width: 576px) {
+  body {
+    background-color: hotpink;
+  }
 
-   body {
-     background-color: hotpink;
-   }
+  body::before {
+    content: "'sm-': lig el. over 576px.";
+  }
 
-   body::before {
-     content: "'sm-': lig el. over 576px.";
-   }
+  /* END "sm-" 576px and up */
+}
 
-   /* END "sm-" 576px and up */
- }
+/**************************************************/
+/* // Medium devices (tablets, 768px and up) */
+/**************************************************/
+@media (min-width: 768px) {
+  body {
+    background-color: yellow;
+  }
 
- /**************************************************/
- /* // Medium devices (tablets, 768px and up) */
- /**************************************************/
- @media (min-width: 768px) {
+  body::before {
+    content: "'md': lig el. over 768px. ";
+  }
 
-   body {
-     background-color: yellow;
-   }
+  /* END "md-" 768px and up */
+}
 
-   body::before {
-     content: "'md': lig el. over 768px. ";
-   }
+/**************************************************/
+/* // Large devices (desktops, 992px and up) */
+/**************************************************/
+@media (min-width: 992px) {
+  body {
+    background-color: peru;
+  }
 
-   /* END "md-" 768px and up */
- }
+  body::before {
+    content: "'lg': lig el. over 992px.";
+  }
 
- /**************************************************/
- /* // Large devices (desktops, 992px and up) */
- /**************************************************/
- @media (min-width: 992px) {
+  /* END "lg-" 992px and up */
+}
 
-   body {
-     background-color: peru;
-   }
+/**************************************************/
+/* // Extra large devices (large desktops, 1200px and up) */
+/**************************************************/
+@media (min-width: 1200px) {
+  body {
+    background-color: blue;
+  }
 
-   body::before {
-     content: "'lg': lig el. over 992px.";
-   }
+  body::before {
+    content: "'xl': lig el. over 1200px.";
+  }
 
-   /* END "lg-" 992px and up */
- }
+  /* END "xl-" 1200px and up */
+}
 
- /**************************************************/
- /* // Extra large devices (large desktops, 1200px and up) */
- /**************************************************/
- @media (min-width: 1200px) {
+/**************************************************/
+/* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
+/**************************************************/
+@media (min-width: 1400px) {
+  body {
+    background-color: yellowgreen;
+  }
 
-   body {
-     background-color: blue;
-   }
+  body::before {
+    content: "'xxl': lig el. over 1400px.";
+  }
 
-   body::before {
-     content: "'xl': lig el. over 1200px.";
-   }
-
-   /* END "xl-" 1200px and up */
- }
-
- /**************************************************/
- /* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
- /**************************************************/
- @media (min-width: 1400px) {
-
-   body {
-     background-color: yellowgreen;
-   }
-
-   body::before {
-     content: "'xxl': lig el. over 1400px.";
-   }
-
-   /* END "xl-" 1400px and up */
- }
+  /* END "xl-" 1400px and up */
+}
